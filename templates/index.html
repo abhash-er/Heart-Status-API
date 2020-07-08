@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Heart Disease API</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<img class="wave" src="{{ url_for('static',filename='img/wave.png') }}">
+	<div class="container">
+		<div class="img">
+			<img src="{{ url_for('static',filename='img/heart.svg') }}">
+		</div>
+		<div class="login-content">
+			<form action= "/heartcondition" method = "POST">
+				<h2 class="title">Heart API</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-asterisk"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Age</h5>
+           		   		<input type="text" class="input" name = "age">
+           		   </div>
+           		</div>
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-asterisk"></i>
+					</div>
+					<div class="div">
+						<h5>sex</h5>
+						<input type="text" class="input" name = "sex">
+					</div>
+				</div>
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-asterisk"></i>
+					</div>
+					<div class="div">
+						<h5>cp</h5>
+						<input type="text" class="input" name = "cp">
+					</div>
+				</div>
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-asterisk"></i>
+					</div>
+					<div class="div">
+						<h5>trestbps</h5>
+						<input type="text" class="input" name = "trestbps">
+					</div>
+				</div>
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-asterisk"></i>
+					</div>
+					<div class="div">
+						<h5>chol</h5>
+						<input type="text" class="input" name = "chol">
+					</div>
+				</div>
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-asterisk"></i>
+					</div>
+					<div class="div">
+						<h5>fbs</h5>
+						<input type="text" class="input" name = "fbs">
+					</div>
+				</div>
+
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-asterisk"></i>
+					</div>
+					<div class="div">
+						<h5>restecg</h5>
+						<input type="text" class="input" name = "restecg">
+					</div>
+				</div>
+
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-asterisk"></i>
+					</div>
+					<div class="div">
+						<h5>thalach</h5>
+						<input type="text" class="input" name = "thalach">
+					</div>
+				</div>
+
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-asterisk"></i>
+					</div>
+					<div class="div">
+						<h5>exang</h5>
+						<input type="text" class="input" name = "exang">
+					</div>
+				</div>
+
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-asterisk"></i>
+					</div>
+					<div class="div">
+						<h5>oldpeak</h5>
+						<input type="text" class="input" name = "oldpeak">
+					</div>
+				</div>
+
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-asterisk"></i>
+					</div>
+					<div class="div">
+						<h5>slope</h5>
+						<input type="text" class="input" name = "slope">
+					</div>
+				</div>
+
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-asterisk"></i>
+					</div>
+					<div class="div">
+						<h5>ca</h5>
+						<input type="text" class="input" name = "ca">
+					</div>
+				</div>
+
+				<div class="input-div one">
+					<div class="i">
+						<i class="fas fa-asterisk"></i>
+					</div>
+					<div class="div">
+						<h5>thal</h5>
+						<input type="text" class="input" name = "thal">
+					</div>
+				</div>
+				
+            	<input type="submit" class="btn" value="Get Heart Status">
+            </form>
+        </div>
+    </div>
+	<script type="text/javascript" src="{{ url_for('static',filename='js/main.js') }}"></script>
+</body>
+</html>

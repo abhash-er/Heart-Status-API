@@ -1,0 +1,9 @@
+data = {"age":[67],"sex":[1],"cp":[2],"trestbps":[133],"chol":[182],
+            "fbs":[1], "restecg":[2],"thalach":[168],"exang":[0],
+            "oldpeak":[3.2],"slope":[2],"ca" : [3],"thal":[2]}
+
+
+- Please Provide this as the input inside the form 
+
+- Remove cache before running Flask file
+
